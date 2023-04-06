@@ -1,0 +1,142 @@
+.wrapper {
+    width: 252px;
+    height: 572px;
+    padding: 59px 33px;
+    margin: 0 3px 0 3px;
+}
+
+.home,
+.ticket,
+.check_ticket,
+.setting,
+.list,
+.desktop {
+    display: -webkit-inline-box;
+    height: 56px;
+    width: 252px;
+    border-radius: 8px;
+    gap: 31px;
+    align-items: flex-start;
+
+    img {
+        margin: 18px 0px 0px 27px;
+        display: inline;
+        width: 18px;
+        height: 20.02px;
+        opacity: 0.8;
+    }
+
+    p {
+        padding-top: 15px;
+        height: 26px;
+
+        /* 18 medium */
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        /* identical to box height, or 144% */
+
+        letter-spacing: 0.015em;
+
+        /* Text */
+
+        color: #1e0d03;
+
+        opacity: 0.8;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: #adadad;
+    }
+
+    &.active {
+        background-color: rgb(255, 184, 0, 1);
+
+        p {
+            color: #fff;
+            font-style: normal;
+            font-weight: bold;
+        }
+    }
+}
+
+.service {
+    display: -webkit-inline-box;
+    height: 56px;
+    width: 252px;
+    border-radius: 8px;
+    align-items: center;
+    // padding: 15px 16px 15px 24px;
+    gap: 12px;
+
+    img {
+        width: 18px;
+        height: 20.02px;
+    }
+
+    p {
+        padding-left: 75px;
+        height: 26px;
+
+        /* 18 medium */
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        /* identical to box height, or 144% */
+
+        letter-spacing: 0.015em;
+
+        /* Text */
+
+        color: #1e0d03;
+
+        opacity: 0.6;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: #adadad;
+    }
+    &.active {
+        color: #fff;
+        font-style: normal;
+        font-weight: bold;
+    }
+}
+
+.footer {
+    margin-top: 350px;
+    display: -webkit-inline-box;
+    padding-left: 15px;
+    gap: 5px;
+
+    p {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        /* identical to box height, or 157% */
+
+        display: flex;
+        align-items: center;
+
+        /* Text */
+
+        color: #1e0d03;
+
+        opacity: 0.4;
+    }
+    img {
+        height: 13px;
+        width: 13px;
+        margin-top: 10px;
+        opacity: 0.4;
+    }
+}

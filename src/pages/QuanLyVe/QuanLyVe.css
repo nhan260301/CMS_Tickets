@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    /* background-color: aquamarine; */
+}
+
+.title {
+    padding: 10px;
+}
+
+.search_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.box {
+    padding-right: 20px;
+    width: 20%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box_loc_ve {
+    color: rgb(255, 184, 0, 1);
+    border: 1px solid rgb(255, 184, 0, 1);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.box_xuat_file {
+    color: rgb(255, 184, 0, 1);
+    border: 1px solid rgb(255, 184, 0, 1);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}

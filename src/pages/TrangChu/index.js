@@ -1,20 +1,29 @@
 import React from 'react';
 import './TrangChu.css';
-//import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
 
-import { Line } from 'react-chartjs-2';
-import { Chart as Chartjs, LineElement, CategoryScale, LinearScale, PointElement } from 'chart.js';
+import images from '~/assets/images';
+import { Line, Doughnut } from 'react-chartjs-2';
+import {
+    Chart as Chartjs,
+    LineElement,
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    ArcElement,
+    Tooltip,
+    Legend,
+} from 'chart.js';
 
-Chartjs.register(LineElement, CategoryScale, LinearScale, PointElement);
+Chartjs.register(LineElement, CategoryScale, LinearScale, PointElement, ArcElement, Tooltip, Legend);
 
 function TrangChu() {
     const dataLine = {
         labels: ['Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7', 'CN'],
         datasets: [
             {
-                data: [150, 170, 170, 140, 220, 230, 200, 195],
+                data: [150, 175, 180, 240, 220, 220, 190],
                 backgroundColor: 'transparent',
-                borderColor: '#f26c6d',
+                borderColor: '#FE9D47',
                 pointBorderColor: 'transparent',
                 pointBorderWidth: 4,
                 tension: 0.5,
@@ -45,6 +54,32 @@ function TrangChu() {
             },
         },
     };
+
+    const dataPieLeft = {
+        labels: false,
+        datasets: [
+            {
+                label: 'Tổng số vé',
+                data: [13568, 56024],
+                backgroundColor: ['#FE9D47', '#4F75FF'],
+                borderColor: ['#FE9D47', '#4F75FF'],
+            },
+        ],
+    };
+    const dataPieRight = {
+        labels: false,
+        datasets: [
+            {
+                label: 'Tổng số vé',
+                data: [28302, 30256],
+                backgroundColor: ['#FE9D47', '#4F75FF'],
+                borderColor: ['#FE9D47', '#4F75FF'],
+            },
+        ],
+    };
+
+    const optionsPie = {};
+
     return (
         <div className="container_home">
             <h2 className="home_title">Thống Kê</h2>
@@ -53,26 +88,23 @@ function TrangChu() {
                     <h3 className="doanhthu">Doanh thu</h3>
                 </div>
                 <div className="lich">
-                    <p>Tháng 4, 2023</p>
-                    {/* <CalendarMonthOutlinedIcon /> */}
+                    <p className="text_lich">Tháng 4, 2023 </p> <img src={images.celendar} alt="calendar" />
                 </div>
             </div>
             <div className="chart_Line">
                 <Line data={dataLine} options={optionsLine}></Line>
             </div>
-            <div className="chart_pie">
-                <div className="text_chart_pie">
-                    <div className="text_sodoanhthu">
-                        <p>Tổng doanh thu theo tuần</p>
-                    </div>
+            <div className="home_bottom">
+                <div className="text_chart_pie_content">
+                    <p className="text_chart_pie_top">Tổng doanh thu theo tuần</p>
                     <div className="sodoanhthu">
-                        <h2>525.145.000</h2> <p>đồng</p>
+                        <h2 className="so">525.145.000</h2> <p className="donvi">đồng</p>
                     </div>
                 </div>
                 <div className="chart_pie">
                     <div className="text_chart_pie">
                         <div className="lich_bottom">
-                            <p>Tháng 4, 2023</p>
+                            <p className="text_lich">Tháng 4, 2023</p> <img src={images.celendar} alt="calendar" />
                         </div>
                         <div className="text_pie_left">
                             <h3>Gói gia đình</h3>
@@ -81,14 +113,23 @@ function TrangChu() {
                             <h3>Gói sự kiện</h3>
                         </div>
                     </div>
-                    <div className="pie_left"> </div>
-                    <div className="pie_right"> </div>
-                    <div className="chuthich">
-                        <div className="chuthich_1">
-                            <p>Vé đã sử dụng</p>
+
+                    <div className="pie">
+                        <div className="pie_left">
+                            <Doughnut data={dataPieLeft} options={optionsPie}></Doughnut>
                         </div>
-                        <div className="chuthich_2">
-                            <p>Vé chưa sử dụng</p>
+                        <div className="pie_right">
+                            <Doughnut data={dataPieRight} options={optionsPie}></Doughnut>
+                        </div>
+                        <div className="text_note">
+                            <div className="note_1">
+                                <img src={images.note1} alt="note1" />
+                                <p>Vé đã sử dụng</p>
+                            </div>
+                            <div className="note_1">
+                                <img src={images.note2} alt="note2" />
+                                <p>Vé chưa sử dụng</p>
+                            </div>
                         </div>
                     </div>
                 </div>

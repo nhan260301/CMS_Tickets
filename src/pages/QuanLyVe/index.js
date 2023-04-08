@@ -71,7 +71,7 @@ function QuanLyVe() {
                 <div className="box">
                     <div className="box_loc_ve">
                         <div className="icon"></div>
-                        <p>Lọc vé</p>
+                        <img src={images.funnel} alt="funnel" /> <p>Lọc vé</p>
                     </div>
                     <div className="box_xuat_file">
                         <p>Xuất file (.csv)</p>

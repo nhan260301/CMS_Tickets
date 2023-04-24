@@ -1,11 +1,11 @@
 const routes = {
     home: '/',
-    quanlyve: '/quanlyve',
-    doisoatve: '/doisoatve',
-    danhsachsukien: '/danhsachsukien',
-    quanlythietbi: '/quanlythietbi',
-    caidat: '/caidat',
-    goidichvu: '/goidichvu',
+    quanlyve: '/QuanLyVe',
+    doisoatve: '/DoiSoatVe',
+    danhsachsukien: '/DanhSachSuKien',
+    quanlythietbi: '/QuanLyThietBi',
+    caidat: '/CaiDat',
+    goidichvu: '/GoiDichVu',
 };
 
 export default routes;

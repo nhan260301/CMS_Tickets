@@ -3,7 +3,7 @@ import styles from './search.module.scss';
 import classNames from 'classnames/bind';
 import images from '~/assets/images';
 import './search.module.scss';
-import './GoiDichVu.css';
+import './GoiDichVu.scss';
 
 const cx = classNames.bind(styles);
 

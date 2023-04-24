@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import './DoiSoatVe.css';
+import './DoiSoatVe.scss';
 import images from '~/assets/images';
 import styles from './search.module.scss';
 import classNames from 'classnames/bind';
+import { RealtimeDataDSV } from '../realtimeDatabaseDSV';
 const selectData = [{ name: 'Đã đối soát' }, { name: 'Chưa đối soát' }];
 const cx = classNames.bind(styles);
 
@@ -44,10 +45,30 @@ function DoiSoatVe() {
                                 </div>
                             </div>
                         </div>
+                        <div className="table_databaseDSV">
+                            <RealtimeDataDSV />
+                        </div>
+                        <div className="footer_tableDSV">
+                            <div className="previous_page">
+                                <img src={images.previous_page} alt="previous_page" />
+                            </div>
+                            <div className="nb_page">
+                                <div className="page1">1</div>
+                                <div className="page2">2</div>
+                                <div className="page3">3</div>
+                                <div className="page4">4</div>
+                                <div className="page5">5</div>
+                                <div className="page_vv">...</div>
+                                <div className="page20">20</div>
+                            </div>
+                            <div className="next_page">
+                                <img src={images.next_page} alt="next_page" />
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="content_DSV_Right">
-                    <h3 className="DSV_title_left">Lọc Vé</h3>
+                    <h3 className="DSV_title_right">Lọc Vé</h3>
                     <div className="tinhtrangDS">
                         <p className="text_ttDS">Tình trạng đối soát</p>
                         <div className="select_ttDS">

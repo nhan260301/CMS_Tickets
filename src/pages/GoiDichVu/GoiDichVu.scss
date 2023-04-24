@@ -1,0 +1,39 @@
+.contaniner_GDV {
+    padding: 30px;
+    .title {
+        padding: 10px;
+    }
+    .search_bar {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .box {
+        display: flex;
+        .box_xuat_file {
+            color: #ff993b;
+            border: 1px solid #ff993b;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0 10px 0 10px;
+            cursor: pointer;
+        }
+        .box_xuat_file:hover {
+            background-color: #ff993b;
+            color: #fff;
+        }
+        .box_them_goive {
+            background-color: #ff993b;
+            color: #fff;
+            border: 1px solid #ff993b;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0 10px 0 10px;
+            cursor: pointer;
+        }
+        .box_them_goive:hover {
+            background-color: #fff;
+            color: #ff993b;
+        }
+    }
+}

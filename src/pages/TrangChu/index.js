@@ -1,5 +1,5 @@
 import React from 'react';
-import './TrangChu.css';
+import './TrangChu.scss';
 
 import images from '~/assets/images';
 import { Line, Doughnut } from 'react-chartjs-2';
@@ -126,7 +126,7 @@ function TrangChu() {
                                 <img src={images.note1} alt="note1" />
                                 <p>Vé đã sử dụng</p>
                             </div>
-                            <div className="note_1">
+                            <div className="note_2">
                                 <img src={images.note2} alt="note2" />
                                 <p>Vé chưa sử dụng</p>
                             </div>

@@ -15,6 +15,9 @@ const images = {
     note2: require('~/assets/images/note2.svg').default,
     celendar: require('~/assets/images/celendar.svg').default,
     funnel: require('~/assets/images/funnel.svg').default,
+    previous_page: require('~/assets/images/previous_page.svg').default,
+    next_page: require('~/assets/images/next_page.svg').default,
+    popup: require('~/assets/images/popup.svg').default,
 };
 
 export default images;

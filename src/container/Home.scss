@@ -34,7 +34,7 @@
     }
 
     .body-line-chart {
-      margin: 0 auto;
+      margin-left: 40px;
       width: 1400px;
       height: 200px;
     }
@@ -61,7 +61,7 @@
     }
 
     .body-circle-chart {
-      margin-top: 80px;
+      margin-top: 45px;
       display: flex;
       justify-content: flex-start;
       height: 246px;
@@ -91,6 +91,9 @@
           font-size: 18px;
           line-height: 28px;
         }
+      }
+      .title_circle{
+        padding-right: 120px;
       }
     }
   }

@@ -7,6 +7,7 @@ import { Radio, Space, Table } from "antd";
 import "antd/dist/antd.css";
 import DayPicker from "./calendar/DayPicker";
 import moment from "moment";
+import icSearch from '../../src/assets/menu/Search.png';
 
 const CheckingTicket = ({ ticketData, fetchTickets }: any) => {
   const [data, setData] = useState([]);
@@ -39,11 +40,8 @@ const CheckingTicket = ({ ticketData, fetchTickets }: any) => {
     setControl(e.target.value);
     filterControl(e.target.value);
   };
-
-  // const handleFilter = () => {
-  //   filterControl(control)
-  //   // console.log(control)
-  // }
+  
+  
 
   return (
     <div className="container-content">
@@ -55,7 +53,7 @@ const CheckingTicket = ({ ticketData, fetchTickets }: any) => {
           <div className="body-title">
             <div className="search">
               <input type="text" placeholder="Tìm bằng số vé" />
-              <i className="fas fa-search"></i>
+              <img src={icSearch} />
             </div>
             <div
               className={

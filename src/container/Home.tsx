@@ -31,11 +31,11 @@ const Home = () => {
         <div className='body-circle-chart'>
           <Calendar />
           <div className='circle1'>
-            <div>Gói gia đình</div>
+            <div className='title_circle'>Gói gia đình</div>
             <CircleChart1 />
           </div>
           <div className='circle2'>
-            <div>Gói sự kiện</div>
+            <div className='title_circle'>Gói sự kiện</div>
             <CircleChart2 />
           </div>
         </div>

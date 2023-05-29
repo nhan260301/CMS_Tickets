@@ -6,11 +6,11 @@ const CircleChart1 = () => {
   const data = [
     {
       type: "Vé đã sử dụng",
-      value: 56024,
+      value: 13568,
     },
     {
       type: "Vé chưa sử dụng",
-      value: 13568,
+      value: 56024,
     },
   ];
   const config = {
@@ -18,7 +18,7 @@ const CircleChart1 = () => {
     data,
     angleField: "value",
     colorField: "type",
-    color: ["#4F75FF", "#FF8A48"],
+    color: ["#FF8A48", "#4F75FF"],
     radius: 1,
     innerRadius: 0.6,
     label: {

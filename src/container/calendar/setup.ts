@@ -16,7 +16,7 @@ export function setup(value: any) {
 
 export function isSelected(value: any, day: any) {
   if (value.isSame(day, 'day') && value.isSame(day, 'month')) {
-    // console.log(true)
+    
   }
   return value.isSame(day, 'day')
 }
